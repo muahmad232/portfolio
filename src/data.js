@@ -8,6 +8,7 @@ import footballAiImg from './assets/football_ai.webp';
 import cyberLibImg from './assets/cyber_lib.webp';
 import colorBlindImg from './assets/colorblind.webp';
 import memeTentImg from './assets/memetent.webp';
+import portfolioImg from './assets/portfolio.webp';
 
 export const personalInfo = {
   name: "Muhammad Ahmad",
@@ -149,6 +150,23 @@ export const allProjects = [
     accentColor: "#a855f7",
     year: "2023",
     highlights: ["Procedural maze generation", "C++ game loop", "Head-to-head multiplayer"],
+  },
+  {
+    id: "portfolio",
+    title: "Personal Portfolio",
+    slug: "portfolio",
+    description:
+      "A modern, responsive personal portfolio website showcasing my projects, skills, and experience as a Machine Learning Engineer and Full-Stack Developer.",
+    longDescription:
+      "Built with React and custom CSS, this portfolio features a sleek, dark-themed design with smooth scrolling animations and interactive elements. Designed for optimal performance, responsiveness, and clean UI/UX.",
+    stack: ["React", "JavaScript", "CSS"],
+    category: "Web Frontend",
+    type: "Full-Stack",
+    repo: "https://github.com/muahmad232/portfolio",
+    image: portfolioImg,
+    accentColor: "#3b82f6",
+    year: "2026",
+    highlights: ["React SPA", "Custom styling & animations", "Fully responsive design"],
   },
 ];
 
