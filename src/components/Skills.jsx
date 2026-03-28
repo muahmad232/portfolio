@@ -3,21 +3,12 @@ import { skills } from '../data';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import './Skills.css';
 
-const SkillBar = ({ name, level, delay = 0, isVisible }) => (
-  <div className="skill-bar" style={{ animationDelay: `${delay}ms` }}>
-    <div className="skill-bar__header">
-      <span className="skill-bar__name mono">{name}</span>
-      <span className="skill-bar__level mono">{level}%</span>
-    </div>
-    <div className="skill-bar__track">
-      <div
-        className="skill-bar__fill"
-        style={{
-          width: isVisible ? `${level}%` : '0%',
-          transitionDelay: `${delay}ms`,
-        }}
-      />
-    </div>
+const SkillBadge = ({ name, delay = 0, isVisible }) => (
+  <div 
+    className={`skill-badge ${isVisible ? 'skill-badge--visible' : ''}`} 
+    style={{ transitionDelay: `${delay}ms` }}
+  >
+    <span className="skill-badge__name mono">{name}</span>
   </div>
 );
 
@@ -62,13 +53,12 @@ const Skills = () => {
 
         {/* Skills grid */}
         <div className="skills__grid">
-          <div className="skills__bars">
+          <div className="skills__badges">
             {currentSkills.map((skill, i) => (
-              <SkillBar
+              <SkillBadge
                 key={skill.name}
                 name={skill.name}
-                level={skill.level}
-                delay={i * 60}
+                delay={i * 40}
                 isVisible={isVisible}
               />
             ))}
@@ -124,19 +114,6 @@ const Skills = () => {
                 </div>
               </div>
             )}
-
-            {/* Certifications mini-list */}
-            <div className="skills__certs">
-              <p className="skills__certs-label mono">Certifications</p>
-              <div className="skills__cert-item">
-                <span className="skills__cert-dot" />
-                <span className="mono">Deep Learning Specialization — DeepLearning.AI</span>
-              </div>
-              <div className="skills__cert-item">
-                <span className="skills__cert-dot" />
-                <span className="mono">Applied Data Science Lab — WorldQuant University</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>

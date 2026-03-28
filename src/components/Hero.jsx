@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { personalInfo } from '../data';
-import profilePic from '../assets/profile_pic.png';
+import profilePic from '../assets/profile_pic.webp';
 import './Hero.css';
 
 const GITHUB_BLACK = (

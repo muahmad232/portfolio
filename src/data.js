@@ -3,15 +3,16 @@
 // Muhammad Ahmad — ML Engineer & Full-Stack Dev
 // ============================================
 
-import darkTowerImg from './assets/dark_tower.png';
-import footballAiImg from './assets/football_ai.png';
-import cyberLibImg from './assets/cyber_lib.png';
+import darkTowerImg from './assets/dark_tower.webp';
+import footballAiImg from './assets/football_ai.webp';
+import cyberLibImg from './assets/cyber_lib.webp';
+import colorBlindImg from './assets/colorblind.webp';
 
 export const personalInfo = {
   name: "Muhammad Ahmad",
   title: "ML Engineer & Full-Stack Developer",
   tagline: "Building intelligent systems at the intersection of AI and the web.",
-  location: "Jhang, Pakistan",
+  location: "Islamabad, Pakistan",
   email: "ahmadnaul.495@gmail.com",
   phone: "+92-341-2218232",
   university: "National University of Sciences and Technology (NUST)",
@@ -110,6 +111,7 @@ export const allProjects = [
     category: "Web Extension",
     type: "Full-Stack",
     repo: "https://github.com/muahmad232/color-and-cognitive-accessibility",
+    image: colorBlindImg,
     accentColor: "#22c55e",
     year: "2024",
     highlights: ["Accessibility adaptation", "Diverse visual support", "Cognitive modifications"],
@@ -178,6 +180,15 @@ export const skills = {
 };
 
 export const certifications = [
+  {
+    name: "Machine Learning Specialization",
+    org: "DeepLearning.AI (Coursera)",
+    courses: [
+      "Supervised Machine Learning: Regression and Classification",
+      "Advanced Learning Algorithms",
+      "Unsupervised Learning, Recommenders, Reinforcement Learning",
+    ],
+  },
   {
     name: "Deep Learning Specialization",
     org: "DeepLearning.AI (Coursera)",
