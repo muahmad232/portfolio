@@ -16,7 +16,6 @@ export const personalInfo = {
   tagline: "Building intelligent systems at the intersection of AI and the web.",
   location: "Islamabad, Pakistan",
   email: "ahmadnaul.495@gmail.com",
-  phone: "+92-341-2218232",
   university: "National University of Sciences and Technology (NUST)",
   degree: "Bachelor of Computer Science",
   gradYear: "2027",

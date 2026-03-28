@@ -36,7 +36,6 @@ const About = () => {
             {[
               { icon: '📍', label: 'Location', value: personalInfo.location },
               { icon: '✉️', label: 'Email', value: personalInfo.email },
-              { icon: '📱', label: 'Phone', value: personalInfo.phone },
             ].map(fact => (
               <div key={fact.label} className="about__fact">
                 <span className="about__fact-icon">{fact.icon}</span>
