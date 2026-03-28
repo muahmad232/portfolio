@@ -1,0 +1,245 @@
+.skills {
+  padding: 7rem clamp(1rem, 5vw, 2rem);
+  background: var(--bg-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.skills::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-accent), transparent);
+}
+
+.skills__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.skills__header {
+  max-width: 540px;
+}
+
+.skills__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+
+.skills__subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Tabs */
+.skills__tabs {
+  display: flex;
+  gap: 0.5rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.4rem;
+  width: fit-content;
+}
+
+.skills__tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  color: var(--text-secondary);
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+}
+
+.skills__tab:hover {
+  color: var(--text-primary);
+  background: var(--bg-card);
+}
+
+.skills__tab--active {
+  background: var(--bg-card) !important;
+  color: var(--accent-primary) !important;
+  border: 1px solid var(--border);
+}
+
+/* Grid */
+.skills__grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Skill bars */
+.skills__bars {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.skill-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.skill-bar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-bar__name {
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}
+
+.skill-bar__level {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+.skill-bar__track {
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.skill-bar__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 2px;
+  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Info panel */
+.skills__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: sticky;
+  top: 88px;
+}
+
+.skills__panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: fadeSlide 0.3s ease;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.skills__panel-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.skills__panel-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.skills__panel-text {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.skills__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skills__tag {
+  font-size: 0.65rem;
+  color: var(--accent-primary);
+  border: 1px solid var(--accent-primary);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  background: rgba(232, 255, 71, 0.04);
+  letter-spacing: 0.03em;
+}
+
+[data-theme="light"] .skills__tag {
+  background: rgba(0,0,0,0.04);
+}
+
+/* Certs */
+.skills__certs {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skills__certs-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.skills__cert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.skills__cert-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+@media (max-width: 1024px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+  .skills__info {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills__tabs {
+    flex-direction: column;
+    width: 100%;
+  }
+}

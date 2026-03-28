@@ -1,0 +1,215 @@
+.projects-page {
+  min-height: 100vh;
+}
+
+/* Hero banner */
+.projects-page__hero {
+  background: var(--bg-secondary);
+  padding: 10rem clamp(1rem, 5vw, 2rem) 4rem;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-page__hero::after {
+  content: 'PROJECTS';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: clamp(3rem, 15vw, 12rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--border);
+  pointer-events: none;
+  line-height: 1;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.projects-page__hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.projects-page__title {
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+  margin-bottom: 1rem;
+}
+
+.projects-page__subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+/* Filters */
+.projects-page__filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.projects-page__filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  padding: 0.45rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  background: var(--bg-card);
+  transition: all var(--transition);
+  cursor: pointer;
+}
+
+.projects-page__filter:hover {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+}
+
+.projects-page__filter--active {
+  color: var(--accent-primary) !important;
+  border-color: var(--accent-primary) !important;
+  background: transparent;
+}
+
+.projects-page__filter-count {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  border-radius: 100px;
+  padding: 0.1rem 0.45rem;
+  transition: color var(--transition);
+}
+
+.projects-page__filter--active .projects-page__filter-count {
+  color: var(--accent-primary);
+  background: rgba(232,255,71,0.08);
+}
+
+/* Content */
+.projects-page__content {
+  padding: 4rem clamp(1rem, 5vw, 2rem) 7rem;
+  background: var(--bg-primary);
+}
+
+.projects-page__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Grid */
+.projects-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.projects-page__card-wrap {
+  animation: cardReveal 0.5s ease both;
+}
+
+@keyframes cardReveal {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Empty */
+.projects-page__empty {
+  text-align: center;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.projects-page__empty span {
+  font-size: 3rem;
+}
+
+.projects-page__empty p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+}
+
+/* Coming soon card */
+.projects-page__coming-soon {
+  border: 1px dashed var(--border-accent);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+}
+
+.projects-page__cs-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.projects-page__cs-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.projects-page__cs-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.projects-page__cs-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+.projects-page__cs-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects-page__cs-tag {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  background: var(--bg-secondary);
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 1024px) {
+  .projects-page__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-page__grid {
+    grid-template-columns: 1fr;
+  }
+  .projects-page__hero::after {
+    display: none;
+  }
+}
