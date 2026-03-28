@@ -7,6 +7,7 @@ import darkTowerImg from './assets/dark_tower.webp';
 import footballAiImg from './assets/football_ai.webp';
 import cyberLibImg from './assets/cyber_lib.webp';
 import colorBlindImg from './assets/colorblind.webp';
+import memeTentImg from './assets/memetent.webp';
 
 export const personalInfo = {
   name: "Muhammad Ahmad",
@@ -128,6 +129,7 @@ export const allProjects = [
     category: "Software Development",
     type: "Other",
     repo: "https://github.com/muahmad232/MemeTent",
+    image: memeTentImg,
     accentColor: "#f59e0b",
     year: "2024",
     highlights: ["Java App", "Object-Oriented Design", "Asset Management"],
