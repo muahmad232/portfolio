@@ -30,13 +30,11 @@ const ProjectCard = ({ project, featured = false }) => {
         <p className="project-card__desc">{description}</p>
 
         {/* Highlights */}
-        {highlights && (
-          <ul className="project-card__highlights">
-            {highlights.map((h, i) => (
-              <li key={i} className="project-card__highlight mono">{h}</li>
-            ))}
-          </ul>
-        )}
+        <ul className="project-card__highlights">
+          {(highlights || []).map((h, i) => (
+            <li key={i} className="project-card__highlight mono">{h}</li>
+          ))}
+        </ul>
 
         {/* Stack */}
         <div className="project-card__stack">

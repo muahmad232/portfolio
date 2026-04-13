@@ -32,9 +32,7 @@ export const featuredProjects = [
     title: "KaGuide — Dark Tower Chatbot",
     slug: "kaguide",
     description:
-      "Architected a production-grade RAG pipeline solving LLM hallucination for highly specific domain knowledge. Delivers sub-100ms, lore-accurate responses for Stephen King's Dark Tower universe.",
-    longDescription:
-      "Engineered a scalable Retrieval-Augmented Generation system using FAISS vector similarity search and Hugging Face Sentence Transformers to query dense wiki datasets. Integrated Groq's Llama 3.1 API to handle real-time NLP generation, alongside writing an intelligent spoiler-protection logic gateway that dynamically filters content based on user progression.",
+      "Built a production RAG chatbot with FAISS retrieval and Groq Llama 3.1 generation to deliver real-time, lore-accurate Dark Tower answers with spoiler-aware response filtering.",
     stack: ["Python", "FastAPI", "FAISS", "Groq LLM", "React", "Hugging Face", "Vercel"],
     category: "AI / RAG",
     type: "AI/ML",
@@ -55,9 +53,7 @@ export const featuredProjects = [
     title: "Football AI Predictor",
     slug: "football-ai",
     description:
-      "Bridged raw sports datasets and actionable end-user insights by building an end-to-end ML trajectory forecasting application, exposed via a full-stack React application.",
-    longDescription:
-      "Developed a complete data pipeline utilizing Pandas for cleaning and Scikit-Learn (gradient boosting, regression) for modeling EA Sports FC 25 statistical data. Designed a RESTful Node.js architecture to serve advanced predictive queries dynamically to a high-performance React front-end, proving the model's reliability in a live application setting.",
+      "Developed an end-to-end football forecasting app with Pandas + Scikit-Learn models served through a Node API to a React UI for real-time player trajectory insights.",
     stack: ["Python", "Pandas", "Scikit-Learn", "React", "Node.js"],
     category: "ML + Full-Stack",
     type: "AI/ML",
@@ -78,9 +74,7 @@ export const featuredProjects = [
     title: "CyberLib",
     slug: "cyberlib",
     description:
-      "Centralized disjointed API resources into an interactive book discovery platform, featuring a robust query-based chatbot that streamlines literature recommendations.",
-    longDescription:
-      "Constructed a secure, full-stack MERN architecture featuring resilient JWT-based authentication and complex dual-API data aggregation (Google Books + Open Library). Engineered a dynamic query-parsing chatbot to automate personalized reading recommendations algorithmically, wrapped in a scalable, performant UI built with Tailwind CSS.",
+      "Built a MERN book platform with JWT auth, live Google Books/Open Library aggregation, and a query-driven chatbot that generates real-time reading recommendations.",
     stack: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
     category: "Full-Stack / MERN",
     type: "Full-Stack",
@@ -104,9 +98,7 @@ export const allProjects = [
     title: "Color & Cognitive Accessibility",
     slug: "color-accessibility",
     description:
-      "Empowered web inclusivity by engineering a browser extension that manipulates the DOM in real-time to alleviate visual and cognitive constraints.",
-    longDescription:
-      "Programmed sophisticated, low-latency DOM filtering utilizing pure JavaScript and CSS. The tool intercepts and modifies page structure and color palettes on-the-fly to support diverse color-blindness profiles and cognitive processing thresholds, ensuring uninterrupted internet accessibility for disabled users.",
+      "Engineered a browser extension that applies low-latency DOM and palette transformations in real time to support color-blind and cognitive accessibility needs.",
     stack: ["JavaScript", "HTML", "CSS"],
     category: "Web Extension",
     type: "Full-Stack",
@@ -121,9 +113,7 @@ export const allProjects = [
     title: "MemeTent",
     slug: "memetent",
     description:
-      "Architected a robust application layer for tracking digital assets and engagement using strict Object-Oriented design principles.",
-    longDescription:
-      "Leveraged core Java OOP principles—including inheritance, polymorphism, and encapsulation—to develop a scalable, maintainable content management system. Proved understanding of strong typing and backend logic structuring by managing complex asset relationships within the application.",
+      "Implemented a Java OOP content management app for digital asset tracking with maintainable class design and real-time state updates across linked entities.",
     stack: ["Java", "OOP"],
     category: "Software Development",
     type: "Other",
@@ -138,9 +128,7 @@ export const allProjects = [
     title: "Trapped Maze Game",
     slug: "trapped",
     description:
-      "Delivered an optimized, logic-heavy console interface featuring algorithmic procedural environment generation and multiplayer synchronization.",
-    longDescription:
-      "Implemented low-level C++ rendering loops and memory-efficient procedural maze generation algorithms. Demonstrated strong problem-solving logic by engineering simultaneous multi-player keyboard input capture and collision detection within a strict command-line environment.",
+      "Built a C++ CLI maze game with procedural generation, synchronized multiplayer input handling, and real-time collision logic in a lightweight game loop.",
     stack: ["C++", "CLI"],
     category: "Game Development",
     type: "Other",
@@ -154,9 +142,7 @@ export const allProjects = [
     title: "Personal Portfolio",
     slug: "portfolio",
     description:
-      "Engineered an interactive, highly performant React-based portfolio leveraging component-driven architecture and modern web optimization techniques.",
-    longDescription:
-      "Utilized React hooks, custom state management, and optimized asset delivery (WebP) to build a lightweight single-page application. Translated complex UI/UX requirements into a fully responsive, cross-browser compatible interface that serves as a live demonstration of my frontend engineering capabilities.",
+      "Developed a responsive React portfolio using component-driven architecture, optimized asset delivery, and smooth interactive UI behavior for real-time content exploration.",
     stack: ["React", "JavaScript", "CSS"],
     category: "Web Frontend",
     type: "Full-Stack",
