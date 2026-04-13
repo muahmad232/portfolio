@@ -28,6 +28,30 @@ const ScrollManager = () => {
 
 const AppInner = () => {
   const { theme, toggleTheme } = useTheme();
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    const metaDescription = document.querySelector('meta[name="description"]');
+
+    if (pathname === '/projects') {
+      document.title = 'Projects | Muhammad Ahmad';
+      if (metaDescription) {
+        metaDescription.setAttribute(
+          'content',
+          'Browse Muhammad Ahmad projects in AI/ML and full-stack development, including production RAG systems, predictive apps, and web platforms.'
+        );
+      }
+      return;
+    }
+
+    document.title = 'Muhammad Ahmad | ML Engineer & Full-Stack Developer';
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        'content',
+        'Muhammad Ahmad portfolio — ML Engineer & Full-Stack Developer building real-time AI systems, RAG pipelines, and scalable web applications.'
+      );
+    }
+  }, [pathname]);
 
   return (
     <>

@@ -29,7 +29,15 @@ const Navbar = ({ theme, toggleTheme }) => {
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''} ${menuOpen ? 'navbar--open' : ''}`}>
       <div className="navbar__inner">
         {/* Logo */}
-        <Link to="/" className="navbar__logo">
+        <Link
+          to="/"
+          className="navbar__logo"
+          onClick={() => {
+            if (location.pathname === '/') {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          }}
+        >
           <span className="navbar__logo-bracket">[</span>
           <span className="navbar__logo-name">ahmad</span>
           <span className="navbar__logo-bracket">]</span>
