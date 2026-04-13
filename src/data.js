@@ -32,9 +32,9 @@ export const featuredProjects = [
     title: "KaGuide — Dark Tower Chatbot",
     slug: "kaguide",
     description:
-      "A production-grade RAG (Retrieval-Augmented Generation) chatbot for Stephen King's Dark Tower universe. Semantic search over vector embeddings ensures lore-accurate, hallucination-controlled responses.",
+      "Architected a production-grade RAG pipeline solving LLM hallucination for highly specific domain knowledge. Delivers sub-100ms, lore-accurate responses for Stephen King's Dark Tower universe.",
     longDescription:
-      "Built using FAISS-based vector similarity search and Sentence Transformers to retrieve context-aware passages from Dark Tower wiki data. Integrates Groq's Llama 3.1 for sub-100ms language generation. Features intelligent spoiler-protection logic — users set their book completion level, and the model gates its responses accordingly.",
+      "Engineered a scalable Retrieval-Augmented Generation system using FAISS vector similarity search and Hugging Face Sentence Transformers to query dense wiki datasets. Integrated Groq's Llama 3.1 API to handle real-time NLP generation, alongside writing an intelligent spoiler-protection logic gateway that dynamically filters content based on user progression.",
     stack: ["Python", "FastAPI", "FAISS", "Groq LLM", "React", "Hugging Face", "Vercel"],
     category: "AI / RAG",
     type: "AI/ML",
@@ -55,9 +55,9 @@ export const featuredProjects = [
     title: "Football AI Predictor",
     slug: "football-ai",
     description:
-      "A machine learning pipeline predicting EA Sports FC 25 player ratings and career trajectories. End-to-end from raw data cleaning to a live React interface.",
+      "Bridged raw sports datasets and actionable end-user insights by building an end-to-end ML trajectory forecasting application, exposed via a full-stack React application.",
     longDescription:
-      "Trained on the EA Sports FC 25 dataset with extensive feature engineering and visualization. Implements multiple predictive algorithms (regression, gradient boosting) to forecast player ratings and optimal career development paths. Exposes predictions through a Node.js REST API with a responsive React frontend.",
+      "Developed a complete data pipeline utilizing Pandas for cleaning and Scikit-Learn (gradient boosting, regression) for modeling EA Sports FC 25 statistical data. Designed a RESTful Node.js architecture to serve advanced predictive queries dynamically to a high-performance React front-end, proving the model's reliability in a live application setting.",
     stack: ["Python", "Pandas", "Scikit-Learn", "React", "Node.js"],
     category: "ML + Full-Stack",
     type: "AI/ML",
@@ -78,9 +78,9 @@ export const featuredProjects = [
     title: "CyberLib",
     slug: "cyberlib",
     description:
-      "A personalized book discovery platform with an AI chatbot for reading recommendations. Cyber-themed MERN stack app aggregating data from Google Books and Open Library APIs.",
+      "Centralized disjointed API resources into an interactive book discovery platform, featuring a robust query-based chatbot that streamlines literature recommendations.",
     longDescription:
-      "Full-stack MERN application with JWT-based authentication, real-time AI reading assistant, and dual API integration (Google Books + Open Library). Features a responsive cyber-themed UI built with Tailwind CSS — dark neon aesthetic with smooth micro-interactions.",
+      "Constructed a secure, full-stack MERN architecture featuring resilient JWT-based authentication and complex dual-API data aggregation (Google Books + Open Library). Engineered a dynamic query-parsing chatbot to automate personalized reading recommendations algorithmically, wrapped in a scalable, performant UI built with Tailwind CSS.",
     stack: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
     category: "Full-Stack / MERN",
     type: "Full-Stack",
@@ -91,7 +91,6 @@ export const featuredProjects = [
     year: "Apr 2025",
     highlights: [
       "MERN full-stack architecture",
-      "AI-powered chatbot integration",
       "Google Books + Open Library APIs",
       "MongoDB authentication system",
     ],
@@ -105,9 +104,9 @@ export const allProjects = [
     title: "Color & Cognitive Accessibility",
     slug: "color-accessibility",
     description:
-      "A lightweight, all-in-one accessibility tool designed to adapt the web for users with diverse visual, cognitive, and motor needs.",
+      "Empowered web inclusivity by engineering a browser extension that manipulates the DOM in real-time to alleviate visual and cognitive constraints.",
     longDescription:
-      "Implements dynamic web-page filtering to increase contrast, modify colors for color-blindness profiles, and alter styling defaults to help with motor and cognitive processing constraints.",
+      "Programmed sophisticated, low-latency DOM filtering utilizing pure JavaScript and CSS. The tool intercepts and modifies page structure and color palettes on-the-fly to support diverse color-blindness profiles and cognitive processing thresholds, ensuring uninterrupted internet accessibility for disabled users.",
     stack: ["JavaScript", "HTML", "CSS"],
     category: "Web Extension",
     type: "Full-Stack",
@@ -122,9 +121,9 @@ export const allProjects = [
     title: "MemeTent",
     slug: "memetent",
     description:
-      "A Java-based project developed for managing or creating meme content and digital assets.",
+      "Architected a robust application layer for tracking digital assets and engagement using strict Object-Oriented design principles.",
     longDescription:
-      "A fully developed Java project using Object-Oriented Programming concepts to provide content management and engagement tracking for internet memes.",
+      "Leveraged core Java OOP principles—including inheritance, polymorphism, and encapsulation—to develop a scalable, maintainable content management system. Proved understanding of strong typing and backend logic structuring by managing complex asset relationships within the application.",
     stack: ["Java", "OOP"],
     category: "Software Development",
     type: "Other",
@@ -139,9 +138,9 @@ export const allProjects = [
     title: "Trapped Maze Game",
     slug: "trapped",
     description:
-      "A C++ based immersive maze game with ever new mazes and ability to go head-to-head with another player.",
+      "Delivered an optimized, logic-heavy console interface featuring algorithmic procedural environment generation and multiplayer synchronization.",
     longDescription:
-      "Developed entirely in C++, this game features procedural maze generation ensuring a new experience every time, and includes multiplayer head-to-head support in a terminal/console environment.",
+      "Implemented low-level C++ rendering loops and memory-efficient procedural maze generation algorithms. Demonstrated strong problem-solving logic by engineering simultaneous multi-player keyboard input capture and collision detection within a strict command-line environment.",
     stack: ["C++", "CLI"],
     category: "Game Development",
     type: "Other",
@@ -155,9 +154,9 @@ export const allProjects = [
     title: "Personal Portfolio",
     slug: "portfolio",
     description:
-      "A modern, responsive personal portfolio website showcasing my projects, skills, and experience as a Machine Learning Engineer and Full-Stack Developer.",
+      "Engineered an interactive, highly performant React-based portfolio leveraging component-driven architecture and modern web optimization techniques.",
     longDescription:
-      "Built with React and custom CSS, this portfolio features a sleek, dark-themed design with smooth scrolling animations and interactive elements. Designed for optimal performance, responsiveness, and clean UI/UX.",
+      "Utilized React hooks, custom state management, and optimized asset delivery (WebP) to build a lightweight single-page application. Translated complex UI/UX requirements into a fully responsive, cross-browser compatible interface that serves as a live demonstration of my frontend engineering capabilities.",
     stack: ["React", "JavaScript", "CSS"],
     category: "Web Frontend",
     type: "Full-Stack",

@@ -135,6 +135,33 @@ button {
   gap: 0.75rem;
 }
 
+.section-label,
+.hero__heading-line,
+.hero__heading-accent,
+.featured-projects__title,
+.skills__title,
+.about__title,
+.projects-page__title,
+.contact__title,
+.project-card__title {
+  padding-inline: clamp(0.2rem, 0.6vw, 0.45rem);
+}
+
+.hero__bio,
+.featured-projects__cta-strip p,
+.skills__subtitle,
+.skills__panel-text,
+.about__bio,
+.about__exp-point,
+.project-card__desc,
+.projects-page__subtitle,
+.contact__desc,
+.contact__info-value,
+.footer__copy,
+.footer__credit {
+  padding-inline: clamp(0.2rem, 0.45vw, 0.4rem);
+}
+
 .section-label::before {
   content: '';
   display: block;
