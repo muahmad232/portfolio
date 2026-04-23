@@ -175,6 +175,7 @@ export const allProjects = [
     stack: ["React", "JavaScript", "CSS"],
     category: "Web Frontend",
     type: "Full-Stack",
+    live: "https://muhammad-ahmad-naul.vercel.app/",
     repo: "https://github.com/muahmad232/portfolio",
     image: portfolioImg,
     accentColor: "#3b82f6",
