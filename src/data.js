@@ -6,6 +6,8 @@
 import darkTowerImg from './assets/dark_tower.webp';
 import footballAiImg from './assets/football_ai.webp';
 import cyberLibImg from './assets/cyber_lib.webp';
+import nustPolicyBotImg from './assets/NUST-policy-bot.webp';
+import anomalyDetectionImg from './assets/anomaly-detection.webp';
 import colorBlindImg from './assets/colorblind.webp';
 import memeTentImg from './assets/memetent.webp';
 import portfolioImg from './assets/portfolio.webp';
@@ -39,13 +41,33 @@ export const featuredProjects = [
     live: "https://ka-guide.vercel.app",
     repo: "https://github.com/muhammad-ahmad/kaguide",
     image: darkTowerImg,
-    accentColor: "#e8ff47",
+    accentColor: "#de6e18",
     year: "Jan 2026",
     highlights: [
       "FAISS vector similarity search",
       "Llama 3.1 via Groq API (low-latency)",
       "Spoiler-protection logic",
       "Sentence Transformers embeddings",
+    ],
+  },
+  {
+    id: "cyberlib",
+    title: "CyberLib",
+    slug: "cyberlib",
+    description:
+      "Built a MERN book platform with JWT auth, live Google Books/Open Library aggregation, and a query-driven chatbot that generates real-time reading recommendations.",
+    stack: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+    category: "Full-Stack / MERN",
+    type: "Full-Stack",
+    live: "https://cyberlib-rho.vercel.app",
+    repo: "https://github.com/muhammad-ahmad/cyberlib",
+    image: cyberLibImg,
+    accentColor: "#9D00FF",
+    year: "Apr 2025",
+    highlights: [
+      "MERN full-stack architecture",
+      "Google Books + Open Library APIs",
+      "MongoDB authentication system",
     ],
   },
   {
@@ -69,30 +91,51 @@ export const featuredProjects = [
       "MERN-stack integration",
     ],
   },
-  {
-    id: "cyberlib",
-    title: "CyberLib",
-    slug: "cyberlib",
-    description:
-      "Built a MERN book platform with JWT auth, live Google Books/Open Library aggregation, and a query-driven chatbot that generates real-time reading recommendations.",
-    stack: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-    category: "Full-Stack / MERN",
-    type: "Full-Stack",
-    live: "https://cyberlib-rho.vercel.app",
-    repo: "https://github.com/muhammad-ahmad/cyberlib",
-    image: cyberLibImg,
-    accentColor: "#ff4747",
-    year: "Apr 2025",
-    highlights: [
-      "MERN full-stack architecture",
-      "Google Books + Open Library APIs",
-      "MongoDB authentication system",
-    ],
-  },
 ];
 
 export const allProjects = [
   ...featuredProjects,
+  {
+    id: "nust-policy-finder",
+    title: "NUST Policy Finder",
+    slug: "nust-policy-finder",
+    description:
+      "Built a real-time policy assistant for NUST students that retrieves relevant handbook clauses across TF-IDF, MinHash, LSH, and SimHash pipelines, then returns grounded Groq-powered answers with source-backed context.",
+    stack: ["React", "TypeScript", "Groq API", "TF-IDF", "MinHash + LSH", "SimHash", "Tailwind CSS"],
+    category: "AI / IR",
+    type: "AI/ML",
+    live: "https://nust-policy-finder.vercel.app/",
+    repo: "https://github.com/Aqib87Ramzan/nust-policy-finder.git",
+    image: nustPolicyBotImg,
+    accentColor: "#78a312",
+    year: "2026",
+    highlights: [
+      "Multi-algorithm retrieval switcher",
+      "Real-time latency and candidate metrics",
+      "Grounded, no-hallucination answer flow",
+      "Compare-all methods benchmark mode",
+    ],
+  },
+  {
+    id: "anomaly-detection-model",
+    title: "Intelligent Dual-Stream Anomaly Detection",
+    slug: "anomaly-detection-model",
+    description:
+      "Engineered a real-time surveillance pipeline that combines YOLOv8 + BoT-SORT spatial detection with ResNet50-LSTM temporal modeling to flag restricted-zone intrusions and classify human behavior with high operational reliability.",
+    stack: ["Python", "PyTorch", "YOLOv8", "ResNet50", "LSTM", "BoT-SORT", "Google Colab"],
+    category: "AI / Vision",
+    type: "AI/ML",
+    repo: "https://github.com/muahmad232/Anomaly-Detection-Model.git",
+    image: anomalyDetectionImg,
+    accentColor: "#ff8c42",
+    year: "2025",
+    highlights: [
+      "Dual-stream spatial + temporal anomaly logic",
+      "25-35 FPS inference on Colab T4",
+      "Dynamic pseudo-labeling via temporal variance",
+      "Robust tracking through short occlusions",
+    ],
+  },
   {
     id: "color-accessibility",
     title: "Color & Cognitive Accessibility",
@@ -124,20 +167,6 @@ export const allProjects = [
     highlights: ["Java App", "Object-Oriented Design", "Asset Management"],
   },
   {
-    id: "trapped",
-    title: "Trapped Maze Game",
-    slug: "trapped",
-    description:
-      "Built a C++ CLI maze game with procedural generation, synchronized multiplayer input handling, and real-time collision logic in a lightweight game loop.",
-    stack: ["C++", "CLI"],
-    category: "Game Development",
-    type: "Other",
-    repo: "https://github.com/muahmad232/Trapped",
-    accentColor: "#a855f7",
-    year: "2023",
-    highlights: ["Procedural maze generation", "C++ game loop", "Head-to-head multiplayer"],
-  },
-  {
     id: "portfolio",
     title: "Personal Portfolio",
     slug: "portfolio",
@@ -151,6 +180,20 @@ export const allProjects = [
     accentColor: "#3b82f6",
     year: "2026",
     highlights: ["React SPA", "Custom styling & animations", "Fully responsive design"],
+  },
+  {
+    id: "trapped",
+    title: "Trapped Maze Game",
+    slug: "trapped",
+    description:
+      "Built a C++ CLI maze game with procedural generation, synchronized multiplayer input handling, and real-time collision logic in a lightweight game loop.",
+    stack: ["C++", "CLI"],
+    category: "Game Development",
+    type: "Other",
+    repo: "https://github.com/muahmad232/Trapped",
+    accentColor: "#a855f7",
+    year: "2023",
+    highlights: ["Procedural maze generation", "C++ game loop", "Head-to-head multiplayer"],
   },
 ];
 
