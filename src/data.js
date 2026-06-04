@@ -11,6 +11,7 @@ import anomalyDetectionImg from './assets/anomaly-detection.webp';
 import colorBlindImg from './assets/colorblind.webp';
 import memeTentImg from './assets/memetent.webp';
 import portfolioImg from './assets/portfolio.webp';
+import paperAgentImg from './assets/paper_agent.webp';
 
 export const personalInfo = {
   name: "Muhammad Ahmad",
@@ -71,6 +72,31 @@ export const featuredProjects = [
     ],
   },
   {
+    id: "paper-agent",
+    title: "Research Paper AI Agent",
+    slug: "paper-agent",
+    description:
+      "Built an autonomous AI agent that discovers, screens, and recommends research papers tailored to your profile using a 4-signal scoring system (semantic embeddings, LLM judgment, keywords, recency) and runs daily via GitHub Actions.",
+    stack: ["FastAPI", "LangChain", "Groq LLM", "React", "Supabase", "pgvector", "GitHub Actions"],
+    category: "AI Agent / Full-Stack",
+    type: "AI/ML",
+    live: "https://paper-agent-one.vercel.app/",
+    repo: "https://github.com/muahmad232/Research-Paper-AI.git",
+    image: paperAgentImg,
+    accentColor: "#10B981",
+    year: "June 2026",
+    highlights: [
+      "Autonomous multi-source paper fetching (arXiv + OpenAlex)",
+      "4-signal relevance scoring with LLM deep analysis",
+      "Research gap detection & human escalation queue",
+      "Daily AI-written digest + GitHub Actions scheduler",
+    ],
+  },
+];
+
+export const allProjects = [
+  ...featuredProjects,
+  {
     id: "football-ai",
     title: "Football AI Predictor",
     slug: "football-ai",
@@ -91,10 +117,6 @@ export const featuredProjects = [
       "MERN-stack integration",
     ],
   },
-];
-
-export const allProjects = [
-  ...featuredProjects,
   {
     id: "nust-policy-finder",
     title: "NUST Policy Finder",
