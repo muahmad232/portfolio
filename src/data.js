@@ -3,6 +3,7 @@
 // Muhammad Ahmad — ML Engineer & Full-Stack Dev
 // ============================================
 
+import omniusAwakenedImg from './assets/omnius-awakened.webp';
 import darkTowerImg from './assets/dark_tower.webp';
 import footballAiImg from './assets/football_ai.webp';
 import cyberLibImg from './assets/cyber_lib.webp';
@@ -31,24 +32,24 @@ export const personalInfo = {
 
 export const featuredProjects = [
   {
-    id: "kaguide",
-    title: "KaGuide — Dark Tower Chatbot",
-    slug: "kaguide",
+    id: "omnius-awakened",
+    title: "Omnius Awakened — Dune AI Agent",
+    slug: "omnius-awakened",
     description:
-      "Built a production RAG chatbot with FAISS retrieval and Groq Llama 3.1 generation to deliver real-time, lore-accurate Dark Tower answers with spoiler-aware response filtering.",
-    stack: ["Python", "FastAPI", "FAISS", "Groq LLM", "React", "Hugging Face", "Vercel"],
-    category: "AI / RAG",
+      "Built a context-aware real-time voice assistant (Omnius) to enable immersive, lore-accurate audio conversations for users exploring the Dune universe.",
+    stack: ["Python", "FastAPI", "Supabase", "LiveKit", "Groq LLM", "React", "Vercel"],
+    category: "AI / Voice Assistant",
     type: "AI/ML",
-    live: "https://ka-guide.vercel.app",
-    repo: "https://github.com/muhammad-ahmad/kaguide",
-    image: darkTowerImg,
-    accentColor: "#de6e18",
-    year: "Jan 2026",
+    live: "https://omnius-awakened.vercel.app",
+    repo: "https://github.com/muahmad232/dune-bot",
+    image: omniusAwakenedImg,
+    accentColor: "#d97706",
+    year: "Aug 2026",
     highlights: [
-      "FAISS vector similarity search",
-      "Llama 3.1 via Groq API (low-latency)",
-      "Spoiler-protection logic",
-      "Sentence Transformers embeddings",
+      "LiveKit WebRTC & Groq STT/TTS",
+      "Supabase & Hugging Face RAG pipeline",
+      "Persona-driven system prompts",
+      "Real-time voice interactions",
     ],
   },
   {
@@ -96,6 +97,27 @@ export const featuredProjects = [
 
 export const allProjects = [
   ...featuredProjects,
+  {
+    id: "kaguide",
+    title: "KaGuide — Dark Tower Chatbot",
+    slug: "kaguide",
+    description:
+      "Built a production RAG chatbot with FAISS retrieval and Groq Llama 3.1 generation to deliver real-time, lore-accurate Dark Tower answers with spoiler-aware response filtering.",
+    stack: ["Python", "FastAPI", "FAISS", "Groq LLM", "React", "Hugging Face", "Vercel"],
+    category: "AI / RAG",
+    type: "AI/ML",
+    live: "https://ka-guide.vercel.app",
+    repo: "https://github.com/muhammad-ahmad/kaguide",
+    image: darkTowerImg,
+    accentColor: "#de6e18",
+    year: "Jan 2026",
+    highlights: [
+      "FAISS vector similarity search",
+      "Llama 3.1 via Groq API (low-latency)",
+      "Spoiler-protection logic",
+      "Sentence Transformers embeddings",
+    ],
+  },
   {
     id: "football-ai",
     title: "Football AI Predictor",
