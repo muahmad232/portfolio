@@ -62,7 +62,7 @@ export const featuredProjects = [
     stack: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
     category: "Full-Stack / MERN",
     type: "Full-Stack",
-    live: "https://cyberlib-rho.vercel.app",
+    live: "https://cyber-lib.vercel.app",
     repo: "https://github.com/muhammad-ahmad/cyberlib",
     image: cyberLibImg,
     accentColor: "#9D00FF",
