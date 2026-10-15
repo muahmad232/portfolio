@@ -3,6 +3,7 @@
 // Muhammad Ahmad — ML Engineer & Full-Stack Dev
 // ============================================
 
+import cleanItImg from './assets/clean-it.webp';
 import omniusAwakenedImg from './assets/omnius-awakened.webp';
 import darkTowerImg from './assets/dark_tower.webp';
 import footballAiImg from './assets/football_ai.webp';
@@ -97,6 +98,27 @@ export const featuredProjects = [
 
 export const allProjects = [
   ...featuredProjects,
+  {
+    id: "clean-it",
+    title: "Clean-It — Data Quality & Autonomous Preparation Engine",
+    slug: "clean-it",
+    description:
+      "Built an autonomous tabular data quality and preparation platform combining streaming Polars execution with Groq LLM reasoning in a self-healing remediation loop with AST code sandboxing and reversible Parquet version lineage.",
+    stack: ["FastAPI", "Polars", "Groq LLM", "React", "Supabase", "Scikit-Learn", "Vercel"],
+    category: "AI Agent / Data Quality",
+    type: "AI/ML",
+    live: "https://clean-it-all.vercel.app",
+    repo: "https://github.com/muahmad232/clean-it",
+    image: cleanItImg,
+    accentColor: "#06b6d4",
+    year: "Oct 2026",
+    highlights: [
+      "Groq LLM agentic self-healing loop with auto-rollback",
+      "Vectorized Polars lazy streaming & 13 issue detectors",
+      "AST-sandboxed dynamic Python transformations",
+      "80/20 holdout ML benchmark with zero target leakage",
+    ],
+  },
   {
     id: "kaguide",
     title: "KaGuide — Dark Tower Chatbot",
